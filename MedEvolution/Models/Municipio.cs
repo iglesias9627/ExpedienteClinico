@@ -20,7 +20,7 @@ namespace MedEvolution.Models
 
         [Required]
         [StringLength(30)]
-        private string nombreMun { get; set; }
+        private string NombreMun { get; set; }
           
         public virtual Departamento Departamento { get; set; }
 

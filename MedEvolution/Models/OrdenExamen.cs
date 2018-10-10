@@ -9,18 +9,18 @@ namespace MedEvolution.Models
     public class OrdenExamen
     {
         [Key]
-        private int idOrden { get; set; }
+        private int IdOrden { get; set; }
 
-        private int idConsulta { get; set; }
+        private int IdConsulta { get; set; }
 
-        private int codigoExamen { get; set; }
+        private int CodigoExamen { get; set; }
 
         [Required]
-        private bool urgencia { get; set; }
+        private bool Urgencia { get; set; }
 
-        private byte resultado { get; set; }
+        private byte Resultado { get; set; }
 
-        private DateTime fechaResultado { get; set; }
+        private DateTime FechaResultado { get; set; }
 
         public virtual Consulta Consulta { get; set; }
 

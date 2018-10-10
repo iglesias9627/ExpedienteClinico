@@ -14,11 +14,11 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private string correoLaboral { get; set; }
+        private string CorreoLaboral { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombreRol { get; set; }
+        private string NombreRol { get; set; }
 
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }

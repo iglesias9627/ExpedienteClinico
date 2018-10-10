@@ -10,7 +10,7 @@ namespace MedEvolution.Models
     {
         [Key]
         [StringLength(10)]
-        private string dui { get; set; }
+        private string Dui { get; set; }
 
         [Required]
         [StringLength(30)]

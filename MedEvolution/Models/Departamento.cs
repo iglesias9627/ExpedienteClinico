@@ -14,11 +14,11 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoDepartamento { get; set; }
+        private int CodigoDepartamento { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombreDep { get; set; }
+        private string NombreDep { get; set; }
 
         public virtual ICollection<Municipio> Municipios { get; set; }
     }

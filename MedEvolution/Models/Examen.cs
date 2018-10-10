@@ -14,15 +14,15 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoExamen { get; set; }
+        private int CodigoExamen { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string tipoMuestra { get; set; }
+        private string TipoMuestra { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombreExamen { get; set; }
+        private string NombreExamen { get; set; }
 
         public virtual ICollection<OrdenExamen> OrdenExamenes { get; set; }
         

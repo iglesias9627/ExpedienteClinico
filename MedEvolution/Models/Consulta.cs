@@ -15,30 +15,30 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int idConsulta { get; set; }
+        private int IdConsulta { get; set; }
 
-        private int idCita { get; set; }
+        private int IdCita { get; set; }
 
-        private int idSignos { get; set; }
-
-        [Required]
-        [StringLength(254)]
-        private string sintomatología { get; set; }
+        private int IdSignos { get; set; }
 
         [Required]
         [StringLength(254)]
-        private string diagnostico { get; set; }
+        private string Sintomatología { get; set; }
 
         [Required]
         [StringLength(254)]
-        private string tratamiento { get; set; }
-
-        [Required]
-        private DateTime horaConsulta { get; set; }
+        private string Diagnostico { get; set; }
 
         [Required]
         [StringLength(254)]
-        private string procedimientoEnfermera { get; set; }
+        private string Tratamiento { get; set; }
+
+        [Required]
+        private DateTime HoraConsulta { get; set; }
+
+        [Required]
+        [StringLength(254)]
+        private string ProcedimientoEnfermera { get; set; }
 
         public virtual ICollection<Receta> Recetas  { get; set; }
 

@@ -14,11 +14,11 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoMedicamento { get; set; }
+        private int CodigoMedicamento { get; set; }
 
         [Required]
         [StringLength(20)]
-        private string nombreMed { get; set; }
+        private string NombreMed { get; set; }
 
         public virtual ICollection<Receta> Recetas { get; set; }
 

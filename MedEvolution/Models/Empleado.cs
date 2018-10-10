@@ -12,11 +12,11 @@ namespace MedEvolution.Models
         private int idEmpleado { get; set; }
 
         [StringLength(10)]
-        private int dui { get; set; }
+        private string Dui { get; set; }
 
-        private int idClinica { get; set; }
+        private int IdClinica { get; set; }
 
-        private int codigoEstado { get; set; }
+        private int CodigoEstado { get; set; }
 
         [Required]
         [StringLength(30)]

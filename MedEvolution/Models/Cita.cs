@@ -9,26 +9,26 @@ namespace MedEvolution.Models
     public class Cita
     {
         [Key]
-        private int idCita { get; set; }
+        private int IdCita { get; set; }
 
-        private int jvpm { get; set; }
+        private int Jvpm { get; set; }
 
-        private int idPaciente { get; set; }
+        private int IdPaciente { get; set; }
 
-        private int codigoEstado { get; set; }
-
-        [Required]
-        private DateTime fechaCreada { get; set; }
+        private int CodigoEstado { get; set; }
 
         [Required]
-        private DateTime fechaCita { get; set; }
+        private DateTime FechaCreada { get; set; }
 
         [Required]
-        private DateTime horaCita { get; set; }
+        private DateTime FechaCita { get; set; }
+
+        [Required]
+        private DateTime HoraCita { get; set; }
 
         [Required]
         [StringLength(100)]
-        private string causa { get; set; }
+        private string Causa { get; set; }
 
         public virtual Medico Doctor { get; set; }
 

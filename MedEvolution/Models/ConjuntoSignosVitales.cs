@@ -14,22 +14,22 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        public int idSignos { get; set; }
+        public int IdSignos { get; set; }
 
         [Required]
-        public decimal presionArterial { get; set; }
+        public decimal PresionArterial { get; set; }
 
         [Required]
-        public decimal teperatura { get; set; }
+        public decimal Teperatura { get; set; }
 
         [Required]
-        public decimal peso { get; set; }
+        public decimal Peso { get; set; }
 
         [Required]
-        public decimal pulsoCardiaco { get; set; }
+        public decimal PulsoCardiaco { get; set; }
 
         [Required]
-        public decimal estatura { get; set; }
+        public decimal Estatura { get; set; }
 
         public virtual ICollection<Consulta> Consultas { get; set; }
     }
