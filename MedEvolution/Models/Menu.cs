@@ -14,13 +14,13 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoMenu { get; set; }
+        private int CodigoMenu { get; set; }
 
         private int? Men_codigoMenu { get; set; }
 
         [Required]
         [StringLength(15)]
-        private string nombreMenu { get; set; }
+        private string NombreMenu { get; set; }
 
         public virtual ICollection<Menu> SubMenus { get; set; }
     }

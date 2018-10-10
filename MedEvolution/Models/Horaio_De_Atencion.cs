@@ -14,16 +14,16 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoHorario { get; set; }
+        private int CodigoHorario { get; set; }
 
         [Required]
-        private DateTime horaInicio { get; set; }
+        private DateTime HoraInicio { get; set; }
 
         [Required]
-        private DateTime horaFin { get; set; }
+        private DateTime HoraFin { get; set; }
 
         [Required]
-        private int numeroCitasAtender { get; set; }
+        private int NumeroCitasAtender { get; set; }
 
         public virtual ICollection<Medico> Medicos { get; set; }
     }

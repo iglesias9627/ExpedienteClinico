@@ -14,20 +14,20 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private string correoElectronicoLaboral { get; set; }
+        private string CorreoElectronicoLaboral { get; set; }
 
-        private int codigoRol { get; set; }
+        private int CodigoRol { get; set; }
 
-        private int idEmpleado { get; set; }
+        private int IdEmpleado { get; set; }
 
         [Required]
         [StringLength(16)]
-        private string contrasenia { get; set; }
+        private string Contrasenia { get; set; }
 
         /*Se utilizara cuando se cree una nueva contraseña
          * la nueva contreseña no debe ser igual a la utlima usada*/
         [StringLength(16)]
-        private string ultimaContrasenia { get; set; }
+        private string UltimaContrasenia { get; set; }
 
         public virtual ICollection<Rol> Roles { get; set; }
 

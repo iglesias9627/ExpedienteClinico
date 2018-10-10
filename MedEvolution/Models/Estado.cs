@@ -15,11 +15,11 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoEstado { get; set; }
+        private int CodigoEstado { get; set; }
 
         [Required]
         [StringLength(20)]
-        private string nombreEstado { get; set; }
+        private string NombreEstado { get; set; }
 
         public virtual ICollection<Cita> Citas { get; set; }
         public virtual ICollection<Paciente> Pacientes { get; set; }

@@ -14,12 +14,12 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int idPaciente { get; set; }
+        private int IdPaciente { get; set; }        
 
         private int codigoEstado { get; set; }
 
         [StringLength(10)]
-        public string dui { get; set; }
+        public string Dui { get; set; }
 
         [Required]
         private DateTime fechaCreacion { get; set; }

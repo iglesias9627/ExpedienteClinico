@@ -18,23 +18,23 @@ namespace MedEvolution.Models
         [Key]
         [Column(Order = 0)]
         [StringLength(30)]
-        private string colonia { get; set; }
+        private string Colonia { get; set; }
 
         [Key]
         [Column(Order = 1)]
         [StringLength(30)]
-        private string pasaje_calle { get; set; }
+        private string Pasaje_calle { get; set; }
 
         [Key]
         [Column(Order = 2)]
         [StringLength(5)]
         private string casa { get; set; }
 
-        private int codigoMunicipio { get; set; }
+        private int CodigoMunicipio { get; set; }
 
         [Required]
         [StringLength(50)]
-        private string detalle { get; set; }
+        private string Detalle { get; set; }
 
         public virtual Municipio Municipio { get; set; }
 

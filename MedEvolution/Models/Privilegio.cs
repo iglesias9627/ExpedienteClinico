@@ -14,27 +14,27 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoPrivilegio { get; set; }
+        private int CodigoPrivilegio { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombrePrivilegio { get; set; }
+        private string NombrePrivilegio { get; set; }
 
         [Required]
         [StringLength(80)]
-        private string url { get; set; }
+        private string Url { get; set; }
 
         [Required]
-        private bool leer { get; set; }
+        private bool Leer { get; set; }
 
         [Required]
-        private bool borrar { get; set; }
+        private bool Borrar { get; set; }
 
         [Required]
-        private bool modificar { get; set; }
+        private bool Modificar { get; set; }
 
         [Required]
-        private bool escribir { get; set; }
+        private bool Escribir { get; set; }
 
         public virtual ICollection<Rol> Roles { get; set; }
     }

@@ -14,11 +14,11 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int codigoEspecialidad { get; set; }
+        private int CodigoEspecialidad { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombreEspecialidad { get; set; }
+        private string NombreEspecialidad { get; set; }
 
         public virtual ICollection<Medico> Medicos { get; set; }
     }

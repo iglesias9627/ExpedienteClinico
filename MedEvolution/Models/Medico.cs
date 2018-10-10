@@ -14,13 +14,13 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int jvpm { get; set; }
+        private int Jvpm { get; set; }
 
-        private int codigoEspecialidad { get; set; }
+        private int CodigoEspecialidad { get; set; }
 
-        private int codigoHorario { get; set; }
+        private int CodigoHorario { get; set; }
 
-        private int idEmpleado { get; set; }
+        private int IdEmpleado { get; set; }
 
         public virtual ICollection<Cita> Citas { get; set; }
 

@@ -8,15 +8,15 @@
         public partial class Receta
         {
             [Key]
-            public int idReceta { get; set; }
+            public int IdReceta { get; set; }
 
-            public int codigoMedicamento { get; set; }
+            public int CodigoMedicamento { get; set; }
 
-            public int? idConsulta { get; set; }
+            public int? IdConsulta { get; set; }
 
             [Required]
             [StringLength(254)]
-            public string instrucciones { get; set; }
+            public string Instrucciones { get; set; }
 
             public virtual Consulta Consulta { get; set; }
 

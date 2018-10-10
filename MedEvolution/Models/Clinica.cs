@@ -14,32 +14,32 @@ namespace MedEvolution.Models
         }
 
         [Key]
-        private int idClinica { get; set; }
+        private int IdClinica { get; set; }
 
-        private int idEmpleado { get; set; }
-
-        [Required]
-        [StringLength(30)]
-        private string colonia { get; set; }
+        private int IdEmpleado { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string pasaje_calle { get; set; }
+        private string Colonia { get; set; }
+
+        [Required]
+        [StringLength(30)]
+        private string Pasaje_calle { get; set; }
 
         [Required]
         [StringLength(5)]
-        private string casa { get; set; }
+        private string Casa { get; set; }
 
         [Required]
         [StringLength(30)]
-        private string nombreClinica { get; set; }
+        private string NombreClinica { get; set; }
 
         [Required]
         [StringLength(9)]
-        private string telefono { get; set; }
+        private string Telefono { get; set; }
 
         [Required]
-        private DateTime fechaApertura { get; set; }
+        private DateTime FechaApertura { get; set; }
 
         public virtual ICollection<Empleado> Empleados { get; set; }
 
