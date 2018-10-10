@@ -157,6 +157,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Cita.cs" />
+    <Compile Include="Models\Clinica.cs" />
+    <Compile Include="Models\ConjuntoSignosVitales.cs" />
+    <Compile Include="Models\Consulta.cs" />
+    <Compile Include="Models\Departamento.cs" />
+    <Compile Include="Models\Direccion.cs" />
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\Especialidad_Desempeñada.cs" />
+    <Compile Include="Models\Estado.cs" />
+    <Compile Include="Models\Examen.cs" />
+    <Compile Include="Models\Horaio_De_Atencion.cs" />
+    <Compile Include="Models\MedEvolutionDBContext.cs" />
+    <Compile Include="Models\Medicamento.cs" />
+    <Compile Include="Models\Medico.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Municipio.cs" />
+    <Compile Include="Models\OrdenExamen.cs" />
+    <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\Persona.cs" />
+    <Compile Include="Models\Privilegio.cs" />
+    <Compile Include="Models\Receta.cs" />
+    <Compile Include="Models\Rol.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +188,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="expedienteclinico.mdf" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -201,7 +226,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
